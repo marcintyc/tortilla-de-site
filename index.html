@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lekcje hiszpańskiego — Strona językowa</title>
+    <meta name="description" content="Lekcje hiszpańskiego online — oferta, blog, o mnie i kontakt.">
+    <link rel="stylesheet" href="/workspace/styles.css">
+    <script defer src="/workspace/script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Przejdź do treści</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <span class="logo" aria-hidden="true">ES</span>
+          <a href="#offer" data-route="offer" class="brand-name">Hiszpański z pasją</a>
+        </div>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+        <nav id="primary-nav" class="primary-nav" aria-label="Główna nawigacja">
+          <a href="#offer" data-route="offer" class="nav-link">Oferta</a>
+          <a href="#blog" data-route="blog" class="nav-link">Blog</a>
+          <a href="#about" data-route="about" class="nav-link">O mnie</a>
+          <a href="#contact" data-route="contact" class="nav-link">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="container">
+      <section id="offer" data-route="offer" hidden>
+        <h1>Oferta</h1>
+        <div class="lead card">
+          <p>Ucz się hiszpańskiego wygodnie online. Zajęcia dopasowane do Twoich celów: rozmowa, gramatyka, egzamin, praca lub podróże.</p>
+        </div>
+        <div class="grid two">
+          <div class="card">
+            <h2>Jak wyglądają zajęcia</h2>
+            <ul class="list">
+              <li>Indywidualnie 1‑na‑1 (online)</li>
+              <li>Poziomy A1–C1</li>
+              <li>Dużo mówienia i praktyki</li>
+              <li>Materiały i zadania dopasowane do Ciebie</li>
+            </ul>
+          </div>
+          <div class="card accent">
+            <h2>Przykładowy plan lekcji</h2>
+            <ul class="list">
+              <li>Rozgrzewka i krótkie powtórki</li>
+              <li>Nowe słownictwo w kontekście</li>
+              <li>Ćwiczenia komunikacyjne</li>
+              <li>Mini‑gramatyka „tylko to, co potrzebne”</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <h2>Dla kogo</h2>
+          <p>Dla osób, które chcą <strong>pewnie mówić po hiszpańsku</strong>, przygotować się do egzaminu, uporządkować podstawy lub wreszcie „ruszyć z miejsca”.</p>
+        </div>
+      </section>
+
+      <section id="blog" data-route="blog" hidden>
+        <h1>Blog</h1>
+        <form id="postForm" class="card">
+          <input type="hidden" id="postId" value="">
+          <div class="form-row">
+            <label for="postTitle">Tytuł</label>
+            <input id="postTitle" name="title" type="text" required maxlength="120" placeholder="Np. Jak zacząć naukę hiszpańskiego?">
+          </div>
+          <div class="form-row">
+            <label for="postContent">Treść</label>
+            <textarea id="postContent" name="content" rows="6" required placeholder="Napisz swój wpis..."></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn">Zapisz wpis</button>
+            <button type="button" id="resetFormBtn" class="btn secondary">Wyczyść</button>
+          </div>
+          <p id="editHint" class="hint" hidden>Edytujesz wpis. Kliknij „Zapisz wpis”, aby nadpisać.</p>
+        </form>
+
+        <div class="posts-controls">
+          <input id="searchInput" type="search" placeholder="Szukaj w tytułach..." aria-label="Szukaj wpisów">
+          <button id="clearAllBtn" class="btn danger">Usuń wszystko</button>
+        </div>
+
+        <div id="postsList" class="posts-list" aria-live="polite"></div>
+      </section>
+
+      <section id="about" data-route="about" hidden>
+        <h1>O mnie</h1>
+        <div class="about-wrap">
+          <div class="avatar">
+            <img id="profileImg" src="/workspace/assets/profile.jpg" alt="Twoje zdjęcie (dodaj plik do folderu assets)" onerror="this.closest('.avatar').classList.add('placeholder'); this.remove();">
+            <div class="avatar-fallback" aria-hidden="true">Dodaj zdjęcie do folderu assets</div>
+          </div>
+          <div class="about-text">
+            <p>Cześć! Nazywam się [Twoje imię] i uczę hiszpańskiego. Tworzę lekcje dopasowane do Ciebie — dużo mówienia, praktyka i dobre materiały.</p>
+            <p>Na tej stronie znajdziesz ofertę, wpisy na blogu i formularz kontaktowy. Do zobaczenia na zajęciach!</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" data-route="contact" hidden>
+        <h1>Kontakt</h1>
+        <form id="contactForm" class="card">
+          <div class="form-row">
+            <label for="contactName">Imię</label>
+            <input id="contactName" type="text" name="name" required>
+          </div>
+          <div class="form-row">
+            <label for="contactEmail">E‑mail</label>
+            <input id="contactEmail" type="email" name="email" required>
+          </div>
+          <div class="form-row">
+            <label for="contactMessage">Wiadomość</label>
+            <textarea id="contactMessage" name="message" rows="5" required></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn">Wyślij</button>
+            <button type="button" id="copyEmailBtn" class="btn secondary">Skopiuj e‑mail</button>
+          </div>
+          <p class="hint">Wysyłka otworzy Twój program pocztowy (mailto).</p>
+        </form>
+        <div class="contact-details card">
+          <p><strong>E‑mail:</strong> <a id="contactEmailLink" href="mailto:twoj.email@przyklad.pl">twoj.email@przyklad.pl</a></p>
+          <p><strong>Sociale:</strong> wstaw linki, gdy będą gotowe</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Twoja strona językowa. Wszystkie prawa zastrzeżone.</p>
+      </div>
+    </footer>
+  </body>
+  </html>
