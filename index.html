@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mój Blog - Strona główna</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Nawigacja -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-logo">
+                <h1>Mój Blog</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#blog" class="nav-link active">Blog</a></li>
+                <li><a href="#about" class="nav-link">O mnie</a></li>
+                <li><a href="#offer" class="nav-link">Oferta</a></li>
+                <li><a href="#contact" class="nav-link">Kontakt</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sekcja Blog -->
+    <section id="blog" class="section active">
+        <div class="container">
+            <h2 class="section-title">Blog</h2>
+            
+            <!-- Formularz dodawania wpisu -->
+            <div class="add-post-section">
+                <button class="btn-primary" id="togglePostForm">Dodaj nowy wpis</button>
+                <form id="postForm" class="post-form hidden">
+                    <input type="text" id="postTitle" placeholder="Tytuł wpisu" required>
+                    <textarea id="postContent" placeholder="Treść wpisu" rows="6" required></textarea>
+                    <input type="text" id="postAuthor" placeholder="Autor" required>
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary">Opublikuj</button>
+                        <button type="button" class="btn-secondary" id="cancelPost">Anuluj</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Lista wpisów -->
+            <div id="blogPosts" class="blog-posts">
+                <!-- Przykładowy wpis -->
+                <article class="blog-post">
+                    <h3 class="post-title">Witajcie na moim blogu!</h3>
+                    <div class="post-meta">
+                        <span class="post-author">Jan Kowalski</span>
+                        <span class="post-date">28 września 2025</span>
+                    </div>
+                    <div class="post-content">
+                        <p>To jest mój pierwszy wpis na blogu. Cieszę się, że mogę dzielić się z Wami moimi przemyśleniami i doświadczeniami. Mam nadzieję, że znajdziecie tu coś wartościowego dla siebie.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja O mnie -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">O mnie</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <p>Miejsce na zdjęcie</p>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Cześć, jestem Jan Kowalski</h3>
+                    <p>Jestem pasjonatem nauczania i dzielenia się wiedzą. Od wielu lat zajmuję się edukacją i rozwojem osobistym. Na tym blogu znajdziesz moje przemyślenia, porady i doświadczenia z różnych dziedzin życia.</p>
+                    <p>Wierzę, że każdy z nas ma w sobie potencjał do ciągłego rozwoju i uczenia się nowych rzeczy. Moim celem jest inspirowanie innych do odkrywania swoich możliwości i realizowania marzeń.</p>
+                    <p>Zapraszam Cię do śledzenia mojego bloga i dzielenia się swoimi przemyśleniami w komentarzach!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja Oferta -->
+    <section id="offer" class="section">
+        <div class="container">
+            <h2 class="section-title">Oferta</h2>
+            <div class="offer-grid">
+                <div class="offer-card">
+                    <div class="offer-icon">📚</div>
+                    <h3>Lekcje indywidualne</h3>
+                    <p>Oferuję spersonalizowane lekcje dostosowane do Twoich potrzeb i poziomu zaawansowania. Każda sesja trwa 60 minut.</p>
+                    <ul class="offer-features">
+                        <li>Indywidualne podejście</li>
+                        <li>Elastyczne godziny</li>
+                        <li>Materiały dydaktyczne w cenie</li>
+                    </ul>
+                    <p class="offer-price">150 zł / lekcja</p>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="offer-icon">👥</div>
+                    <h3>Zajęcia grupowe</h3>
+                    <p>Nauka w małych grupach (4-6 osób) to świetny sposób na rozwijanie umiejętności w przyjaznej atmosferze.</p>
+                    <ul class="offer-features">
+                        <li>Małe grupy</li>
+                        <li>Interaktywne zajęcia</li>
+                        <li>Wymiana doświadczeń</li>
+                    </ul>
+                    <p class="offer-price">80 zł / osoba</p>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="offer-icon">💻</div>
+                    <h3>Kursy online</h3>
+                    <p>Ucz się w swoim tempie dzięki profesjonalnie przygotowanym kursom online z dostępem 24/7.</p>
+                    <ul class="offer-features">
+                        <li>Dostęp przez rok</li>
+                        <li>Materiały wideo</li>
+                        <li>Wsparcie mentora</li>
+                    </ul>
+                    <p class="offer-price">Od 299 zł</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja Kontakt -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Kontakt</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Skontaktuj się ze mną</h3>
+                    <p>Masz pytania? Chcesz umówić się na lekcję? Napisz do mnie!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span>kontakt@mojblog.pl</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <span>+48 123 456 789</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span>Warszawa, Polska</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <input type="text" placeholder="Imię i nazwisko" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="text" placeholder="Temat" required>
+                    <textarea placeholder="Wiadomość" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">Wyślij wiadomość</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
