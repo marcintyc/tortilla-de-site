@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Language Learning | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="index.html" aria-label="Language Learning Home">Language Learning</a>
+        <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="burger" aria-hidden="true"></span>
+        </button>
+        <nav id="primary-nav" class="nav__menu" aria-label="Primary">
+          <a href="index.html" class="is-active">Home</a>
+          <a href="blog.html">Blog</a>
+          <a href="about.html">About Me</a>
+          <a href="offer.html">Offer</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section--cream">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <h1>Learn Spanish with Ease!</h1>
+            <p>
+              Build confidence in Spanish through clear explanations, practical exercises, and tips from a passionate teacher.
+            </p>
+            <div class="hero__actions">
+              <a class="btn" href="blog.html">Read the Blog</a>
+              <a class="btn btn--secondary" href="offer.html">See Offers</a>
+            </div>
+          </div>
+          <div class="hero__visual" aria-hidden="true">
+            <div class="hero__card">
+              <div class="hero__badge">¡Hola!</div>
+              <p class="hero__tip">Daily tip: Practice 10 minutes a day.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container grid-two">
+          <div>
+            <h2>Your path to Spanish fluency</h2>
+            <p>
+              Whether you're a beginner or aiming for advanced proficiency, this site provides resources, articles, and lessons to help you progress step by step.
+            </p>
+            <ul class="list list--checks">
+              <li>Clear, concise explanations</li>
+              <li>Practical vocabulary and grammar</li>
+              <li>Engaging activities and insights</li>
+            </ul>
+            <a class="btn" href="contact.html">Get in Touch</a>
+          </div>
+          <div class="card card--elevated">
+            <h3>Latest from the blog</h3>
+            <p>Explore lessons, tips, and cultural notes to accelerate your learning.</p>
+            <a class="btn btn--link" href="blog.html">Go to Blog →</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2025 Language Learning Blog</p>
+      </div>
+    </footer>
+  </body>
+  </html>
+

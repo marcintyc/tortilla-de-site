@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Language Learning | Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="index.html" aria-label="Language Learning Home">Language Learning</a>
+        <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="burger" aria-hidden="true"></span>
+        </button>
+        <nav id="primary-nav" class="nav__menu" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="blog.html">Blog</a>
+          <a href="about.html">About Me</a>
+          <a href="offer.html">Offer</a>
+          <a href="contact.html" class="is-active">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section--cream">
+        <div class="container">
+          <h1>Contact</h1>
+          <p>Have a question or want to book a lesson? Send a message:</p>
+          <form id="contactForm" class="form form--wide" novalidate>
+            <div class="form__grid">
+              <div class="form__field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your name" />
+              </div>
+              <div class="form__field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="you@example.com" />
+              </div>
+            </div>
+            <div class="form__field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" required placeholder="How can I help?"></textarea>
+            </div>
+            <div class="form__actions">
+              <button type="submit" class="btn">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2025 Language Learning Blog</p>
+      </div>
+    </footer>
+  </body>
+  </html>
+
