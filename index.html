@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szkoła Językowa - Nauka Hiszpańskiego</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>EscuelaViva</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Strona Główna</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                    <li><a href="#about" class="nav-link">O Mnie</a></li>
+                    <li><a href="#offer" class="nav-link">Oferta</a></li>
+                    <li><a href="#contact" class="nav-link">Kontakt</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Poznaj Piękno Języka Hiszpańskiego</h1>
+                <p>Profesjonalne lekcje hiszpańskiego dopasowane do Twoich potrzeb. Odkryj fascynujący świat kultury hiszpańskiej i południowoamerykańskiej.</p>
+                <div class="hero-buttons">
+                    <a href="#offer" class="btn-primary">Zobacz Ofertę</a>
+                    <a href="#contact" class="btn-secondary">Skontaktuj się</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="placeholder-image">
+                    <span>🇪🇸</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="blog-section">
+            <div class="container">
+                <h2>Blog Językowy</h2>
+                <div class="blog-controls">
+                    <button id="add-post-btn" class="btn-primary">Dodaj Nowy Post</button>
+                </div>
+                
+                <!-- Add Post Form -->
+                <div id="add-post-form" class="add-post-form hidden">
+                    <h3>Dodaj Nowy Post</h3>
+                    <form id="blog-form">
+                        <input type="text" id="post-title" placeholder="Tytuł posta" required>
+                        <textarea id="post-content" placeholder="Treść posta..." required></textarea>
+                        <div class="form-buttons">
+                            <button type="submit" class="btn-primary">Opublikuj</button>
+                            <button type="button" id="cancel-post" class="btn-secondary">Anuluj</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Blog Posts -->
+                <div id="blog-posts" class="blog-posts">
+                    <article class="blog-post">
+                        <h3>Witaj w naszym blogu językowym!</h3>
+                        <p class="post-date">28 września 2025</p>
+                        <p>Tutaj będziesz znajdować ciekawe artykuły o nauce hiszpańskiego, kulturze krajów hiszpańskojęzycznych i praktyczne wskazówki językowe.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>O Mnie</h2>
+                        <p>Jestem pasjonatką języka hiszpańskiego z wieloletnim doświadczeniem w nauczaniu. Ukończyłam studia hispanistyczne i zdobyłam certyfikaty potwierdzające znajomość języka na najwyższym poziomie.</p>
+                        <p>Moją misją jest pokazanie, że nauka hiszpańskiego może być przyjemna i efektywna. Stosuję nowoczesne metody nauczania dostosowane do indywidualnych potrzeb każdego ucznia.</p>
+                        <div class="credentials">
+                            <div class="credential">
+                                <span class="credential-icon">🎓</span>
+                                <span>Magister Filologii Hiszpańskiej</span>
+                            </div>
+                            <div class="credential">
+                                <span class="credential-icon">📜</span>
+                                <span>Certyfikat DELE C2</span>
+                            </div>
+                            <div class="credential">
+                                <span class="credential-icon">⭐</span>
+                                <span>5+ lat doświadczenia</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="photo-placeholder">
+                            <span>📷</span>
+                            <p>Miejsce na Twoje zdjęcie</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Offer Section -->
+        <section id="offer" class="offer-section">
+            <div class="container">
+                <h2>Moja Oferta</h2>
+                <div class="offer-grid">
+                    <div class="offer-card">
+                        <h3>Lekcje Indywidualne</h3>
+                        <div class="price">150 zł / 60 min</div>
+                        <ul>
+                            <li>Spersonalizowany program nauki</li>
+                            <li>Elastyczne godziny</li>
+                            <li>Materiały dostosowane do poziomu</li>
+                            <li>Fokus na konwersacji</li>
+                        </ul>
+                        <button class="btn-primary">Wybierz</button>
+                    </div>
+                    
+                    <div class="offer-card featured">
+                        <h3>Kurs Grupowy</h3>
+                        <div class="price">80 zł / 90 min</div>
+                        <ul>
+                            <li>Grupy 3-6 osób</li>
+                            <li>Interaktywne ćwiczenia</li>
+                            <li>Wymiana doświadczeń</li>
+                            <li>Atrakcyjna cena</li>
+                        </ul>
+                        <button class="btn-primary">Wybierz</button>
+                    </div>
+                    
+                    <div class="offer-card">
+                        <h3>Przygotowanie do Egzaminów</h3>
+                        <div class="price">180 zł / 60 min</div>
+                        <ul>
+                            <li>DELE A1-C2</li>
+                            <li>SIELE</li>
+                            <li>Egzaminy maturalne</li>
+                            <li>Intensywne przygotowanie</li>
+                        </ul>
+                        <button class="btn-primary">Wybierz</button>
+                    </div>
+                </div>
+                
+                <div class="methodology">
+                    <h3>Metodologia</h3>
+                    <p>Moje lekcje bazują na komunikatywnym podejściu do nauki języka. Koncentruję się na praktycznym wykorzystaniu hiszpańskiego w codziennych sytuacjach, łącząc naukę gramatyki z rozwojem umiejętności konwersacyjnych.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Kontakt</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Skontaktuj się ze mną</h3>
+                        <p>Masz pytania dotyczące nauki hiszpańskiego? Chcesz umówić się na lekcję próbną? Napisz do mnie!</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <span class="contact-icon">📧</span>
+                                <span>kontakt@escuelaviva.pl</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📱</span>
+                                <span>+48 123 456 789</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📍</span>
+                                <span>Warszawa, Polska</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form id="contact-form">
+                            <input type="text" placeholder="Twoje imię" required>
+                            <input type="email" placeholder="Adres email" required>
+                            <input type="text" placeholder="Temat wiadomości" required>
+                            <textarea placeholder="Treść wiadomości..." required></textarea>
+                            <button type="submit" class="btn-primary">Wyślij Wiadomość</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 EscuelaViva. Wszystkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
