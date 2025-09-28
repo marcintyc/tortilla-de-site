@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Język hiszpański – Strona i Blog</title>
+    <meta name="description" content="Lekcje hiszpańskiego, blog językowy, oferta i kontakt." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#home">Przejdź do treści</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#home" class="logo" aria-label="Powrót do sekcji startowej">
+          <span class="logo-mark">ES</span>
+          <span class="logo-text">Hiszpański</span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="Pokaż/ukryj nawigację">
+          <span class="nav-bar"></span>
+          <span class="nav-bar"></span>
+          <span class="nav-bar"></span>
+        </button>
+        <nav class="site-nav" aria-label="Główna nawigacja">
+          <ul>
+            <li><a href="#home">Start</a></li>
+            <li><a href="#o-mnie">O mnie</a></li>
+            <li><a href="#oferta">Oferta</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#kontakt" class="btn btn-primary">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Język hiszpański – ucz się lekko i skutecznie</h1>
+          <p>
+            Spersonalizowane lekcje, praktyczne materiały i łatwy w obsłudze blog z
+            notatkami. Zaczynamy?
+          </p>
+          <div class="hero-cta">
+            <a href="#oferta" class="btn btn-primary">Zobacz ofertę</a>
+            <a href="#blog" class="btn btn-secondary">Przejdź do bloga</a>
+          </div>
+        </div>
+        <div class="hero-badge">
+          <span>¡Hola!</span>
+        </div>
+      </div>
+    </main>
+
+    <section id="o-mnie" class="section about">
+      <div class="container grid-2">
+        <div>
+          <h2>O mnie</h2>
+          <p>
+            Cześć! Tu miejsce na kilka słów o Tobie – doświadczenie, podejście do nauki,
+            ulubione tematy. Tekst możesz dowolnie zmienić.
+          </p>
+          <ul class="bullets">
+            <li>Indywidualne podejście i jasne cele</li>
+            <li>Komunikacja od pierwszej lekcji</li>
+            <li>Nowoczesne materiały i ćwiczenia</li>
+          </ul>
+        </div>
+        <div class="photo-wrap">
+          <img id="profilePhoto" class="photo" alt="Twoje zdjęcie (dodasz później)" />
+          <div class="photo-actions">
+            <input type="file" id="photoInput" accept="image/*" hidden />
+            <button class="btn btn-secondary" id="addPhotoBtn" type="button">Dodaj zdjęcie</button>
+            <button class="btn btn-ghost" id="removePhotoBtn" type="button">Usuń</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="oferta" class="section offer">
+      <div class="container">
+        <h2>Oferta</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Lekcje indywidualne</h3>
+            <p>
+              Skrojone pod Twoje cele (A1–C1): konwersacje, gramatyka, przygotowanie do egzaminów, język w pracy.
+            </p>
+            <ul class="meta">
+              <li>60 min – przykładowo 120 zł</li>
+              <li>Pakiety i faktura na życzenie</li>
+              <li>Materiały w cenie</li>
+            </ul>
+            <a href="#kontakt" class="btn btn-primary">Umów lekcję</a>
+          </article>
+          <article class="card">
+            <h3>Konwersacje</h3>
+            <p>
+              Luźne rozmowy tematyczne i real-life scenki. Idealne na przełamanie bariery i utrwalenie słownictwa.
+            </p>
+            <ul class="meta">
+              <li>45–60 min</li>
+              <li>Materiały + feedback po zajęciach</li>
+            </ul>
+            <a href="#kontakt" class="btn btn-secondary">Zadaj pytanie</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="section blog">
+      <div class="container">
+        <div class="blog-head">
+          <h2>Blog</h2>
+          <p>Dodawaj wpisy jednym kliknięciem. Wpisy zapisują się w Twojej przeglądarce.</p>
+        </div>
+
+        <form id="postForm" class="post-form" autocomplete="off">
+          <input type="hidden" id="postId" />
+          <div class="form-row">
+            <label for="postTitle">Tytuł</label>
+            <input id="postTitle" type="text" placeholder="Np. Falsyfikatory w hiszpańskim" required />
+          </div>
+          <div class="form-row">
+            <label for="postContent">Treść</label>
+            <textarea id="postContent" rows="6" placeholder="Tu wpisz treść…" required></textarea>
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit" id="savePostBtn">Zapisz wpis</button>
+            <button class="btn btn-ghost" type="button" id="cancelEditBtn" hidden>Anuluj edycję</button>
+          </div>
+        </form>
+
+        <ul id="postsList" class="posts-list" aria-live="polite"></ul>
+      </div>
+    </section>
+
+    <section id="kontakt" class="section contact">
+      <div class="container grid-2">
+        <div>
+          <h2>Kontakt</h2>
+          <p>Masz pytania? Napisz – odpowiem chętnie.</p>
+          <ul class="contact-meta">
+            <li><strong>E-mail:</strong> <a id="contactEmail" href="mailto:twoj.email@przyklad.pl">twoj.email@przyklad.pl</a></li>
+          </ul>
+        </div>
+        <form id="contactForm" class="contact-form" autocomplete="off">
+          <div class="form-row">
+            <label for="name">Imię</label>
+            <input id="name" type="text" placeholder="Twoje imię" required />
+          </div>
+          <div class="form-row">
+            <label for="email">E-mail</label>
+            <input id="email" type="email" placeholder="Adres e-mail" required />
+          </div>
+          <div class="form-row">
+            <label for="message">Wiadomość</label>
+            <textarea id="message" rows="5" placeholder="Napisz w czym mogę pomóc" required></textarea>
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Wyślij</button>
+            <button class="btn btn-ghost" type="reset">Wyczyść</button>
+          </div>
+          <p class="form-hint">Formularz używa skrótu mailto – możesz też napisać bezpośrednio.</p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Hiszpański – Twoja nauka, Twoje tempo.</p>
+      </div>
+    </footer>
+  </body>
+  </html>
+
