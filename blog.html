@@ -6,14 +6,14 @@
     <title>Language Learning | Blog</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
     <script defer src="./script.js"></script>
   </head>
   <body>
     <header class="site-header">
       <div class="container nav">
-        <a class="logo" href="index.html" aria-label="Language Learning Home">Language Learning</a>
+        <a class="logo" href="index.html" aria-label="Language Learning Home">✨ Language Learning</a>
         <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav">
           <span class="sr-only">Toggle navigation</span>
           <span class="burger" aria-hidden="true"></span>
@@ -31,8 +31,8 @@
     <main>
       <section class="section section--cream">
         <div class="container flex-between">
-          <h1>Blog</h1>
-          <button id="createPostBtn" class="btn">Create Post</button>
+          <h1>📝 Blog</h1>
+          <button id="createPostBtn" class="btn"><span>✍️ Create Post</span></button>
         </div>
       </section>
 
@@ -46,7 +46,7 @@
         <div class="modal__backdrop" data-close-modal></div>
         <div class="modal__content" role="document">
           <button class="modal__close" id="closeModalBtn" aria-label="Close create post form">×</button>
-          <h2 id="modalTitle">Create a New Post</h2>
+          <h2 id="modalTitle">✨ Create a New Post</h2>
           <form id="postForm" class="form" novalidate>
             <div class="form__field">
               <label for="postTitle">Title</label>
@@ -61,8 +61,8 @@
               <input type="file" id="postImage" name="image" accept="image/*" />
             </div>
             <div class="form__actions">
-              <button type="submit" class="btn">Publish</button>
-              <button type="button" class="btn btn--secondary" id="cancelPostBtn">Cancel</button>
+              <button type="submit" class="btn"><span>📤 Publish</span></button>
+              <button type="button" class="btn btn--secondary" id="cancelPostBtn"><span>Cancel</span></button>
             </div>
           </form>
         </div>
