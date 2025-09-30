@@ -41,7 +41,7 @@
     if (!posts.length) {
       const empty = document.createElement('div');
       empty.className = 'card';
-      empty.innerHTML = '<p>No posts yet. Create your first post!</p>';
+      empty.innerHTML = '<p style="text-align: center; padding: 2rem; font-size: 1.1rem;">📝 Nie ma jeszcze żadnych wpisów. Utwórz pierwszy wpis na blogu!</p>';
       container.appendChild(empty);
       return;
     }
@@ -56,12 +56,12 @@
         img.src = post.imageDataUrl; img.alt = post.title || 'Blog image';
         imgWrap.appendChild(img);
       } else {
-        imgWrap.textContent = 'No image';
+        imgWrap.textContent = 'Brak zdjęcia';
       }
 
       const title = document.createElement('h3');
       title.className = 'card__title';
-      title.textContent = post.title || 'Untitled';
+      title.textContent = post.title || 'Bez tytułu';
 
       const excerpt = document.createElement('p');
       excerpt.className = 'card__excerpt';
@@ -76,11 +76,11 @@
       const readMore = document.createElement('button');
       readMore.className = 'btn btn--link';
       readMore.type = 'button';
-      readMore.textContent = 'Read More';
+      readMore.textContent = 'Czytaj więcej';
       readMore.addEventListener('click', () => {
         const isExpanded = full.style.display === 'block';
         full.style.display = isExpanded ? 'none' : 'block';
-        readMore.textContent = isExpanded ? 'Read More' : 'Show Less';
+        readMore.textContent = isExpanded ? 'Czytaj więcej' : 'Zwiń';
       });
       actions.appendChild(readMore);
 
@@ -113,7 +113,7 @@
       const content = $('#postContent').value.trim();
       const fileInput = $('#postImage');
       if (!title || !content) {
-        alert('Please provide a title and content.');
+        alert('Proszę podać tytuł i treść wpisu.');
         return;
       }
       let imageDataUrl = null;
@@ -132,7 +132,7 @@
       form.reset();
       closeModal(modal);
       renderPosts();
-      alert('Post published!');
+      alert('Wpis został opublikowany! ✅');
     });
 
     renderPosts();
@@ -146,9 +146,9 @@
       const name = $('#name').value.trim();
       const email = $('#email').value.trim();
       const message = $('#message').value.trim();
-      if (!name || !email || !message) { alert('Please fill in all fields.'); return; }
+      if (!name || !email || !message) { alert('Proszę wypełnić wszystkie pola.'); return; }
       console.log('Contact form submitted', { name, email, message });
-      alert('Thanks! Your message has been sent.');
+      alert('Dziękuję! Twoja wiadomość została wysłana. Odezwę się wkrótce! 📧');
       form.reset();
     });
   }

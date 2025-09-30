@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Language Learning | About Me</title>
+    <title>O mnie - Magdalena Kowalska | Nauczycielka Hiszpańskiego</title>
+    <meta name="description" content="Poznaj moją historię i pasję do nauczania języka hiszpańskiego. Doświadczenie, certyfikaty i indywidualne podejście." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -13,36 +14,124 @@
   <body>
     <header class="site-header">
       <div class="container nav">
-        <a class="logo" href="index.html" aria-label="Language Learning Home">✨ Language Learning</a>
+        <a class="logo" href="index.html" aria-label="Strona główna - Nauka Hiszpańskiego">Español con Pasión</a>
         <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav">
           <span class="sr-only">Toggle navigation</span>
           <span class="burger" aria-hidden="true"></span>
         </button>
-        <nav id="primary-nav" class="nav__menu" aria-label="Primary">
-          <a href="index.html">Home</a>
+        <nav id="primary-nav" class="nav__menu" aria-label="Główna nawigacja">
+          <a href="index.html">Start</a>
           <a href="blog.html">Blog</a>
-          <a href="about.html" class="is-active">About Me</a>
-          <a href="offer.html">Offer</a>
-          <a href="contact.html">Contact</a>
+          <a href="about.html" class="is-active">O mnie</a>
+          <a href="offer.html">Oferta</a>
+          <a href="contact.html">Kontakt</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="section section--cream">
+      <section class="section" style="background: linear-gradient(135deg, var(--cream) 0%, #fff5e6 100%);">
         <div class="container grid-two">
-          <div class="photo-placeholder" role="img" aria-label="Add your photo here">
-            <span>Add your photo here</span>
+          <div class="photo-placeholder" role="img" aria-label="Zdjęcie Magdaleny Kowalskiej">
+            <span>👩‍🏫<br>Magdalena Kowalska<br>Tu będzie Twoje zdjęcie</span>
           </div>
           <div>
-            <h1>👋 About Me</h1>
-            <p>
-              Hi, I'm [Your Name], a passionate Spanish teacher dedicated to helping learners communicate with confidence. With engaging lessons and a focus on practical use, I guide students from beginner to advanced levels.
+            <h1>Hola! Jestem Magdalena 👋</h1>
+            <p style="font-size: 1.15rem; line-height: 1.8; margin-bottom: 1.5rem;">
+              Witaj! Jestem certyfikowaną nauczycielką języka hiszpańskiego z ponad 10-letnim doświadczeniem 
+              w nauczaniu online i stacjonarnym. Moją pasją jest pomaganie ludziom w odkrywaniu piękna języka 
+              i kultury hiszpańskiej.
             </p>
-            <p>
-              On this site, you'll find blog posts, tips, and personalized offers to support your language journey. Let's embark on this exciting adventure together! ¡Vamos! 🎯
+            <p style="font-size: 1.15rem; line-height: 1.8; margin-bottom: 1.5rem;">
+              Przez lata pracy nauczyłam setki uczniów - od początkujących po zaawansowanych, od nastolatków 
+              po seniorów. Każdy z nich miał inny cel: jedni chcieli przygotować się do egzaminu DELE, 
+              inni planowali przeprowadzkę do Hiszpanii, a jeszcze inni po prostu zakochali się w tym języku.
             </p>
-            <a class="btn" href="contact.html"><span>Contact Me</span></a>
+            <p style="font-size: 1.15rem; line-height: 1.8; margin-bottom: 2rem;">
+              Wierzę, że nauka języka powinna być przyjemnością! Dlatego moje lekcje łączą skuteczną metodykę 
+              z elementami kultury, muzyki i humoru. ¡Aprender español puede ser divertido!
+            </p>
+            <a class="btn" href="contact.html"><span>📧 Napisz do mnie</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="background: white;">
+        <div class="container">
+          <h2 style="text-align: center; margin-bottom: 3rem;">Moje kwalifikacje i doświadczenie 🎓</h2>
+          <div class="grid-two">
+            <div class="card card--elevated">
+              <h3>📜 Wykształcenie</h3>
+              <ul class="list list--checks">
+                <li>Magister filologii hiszpańskiej</li>
+                <li>Certyfikat DELE C2</li>
+                <li>Studia podyplomowe - metodyka nauczania</li>
+                <li>Kursy metodyczne w Salamance</li>
+              </ul>
+            </div>
+            <div class="card card--elevated">
+              <h3>💼 Doświadczenie</h3>
+              <ul class="list list--checks">
+                <li>10+ lat nauczania języka hiszpańskiego</li>
+                <li>500+ zadowolonych uczniów</li>
+                <li>Egzaminator DELE</li>
+                <li>Autorka materiałów dydaktycznych</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 style="text-align: center; margin-bottom: 2rem;">Co mówią moi uczniowie? 💬</h2>
+          <div class="cards">
+            <div class="card">
+              <p style="font-style: italic; margin-bottom: 1.5rem; color: var(--gray); line-height: 1.7;">
+                "Magda to najlepsza nauczycielka hiszpańskiego, jaką miałam! Jej lekcje są zawsze 
+                dobrze przygotowane i pełne energii. Dzięki niej zdałam egzamin DELE na poziom B2!"
+              </p>
+              <p style="font-weight: 700; color: var(--orange);">— Anna, 28 lat</p>
+            </div>
+            <div class="card">
+              <p style="font-style: italic; margin-bottom: 1.5rem; color: var(--gray); line-height: 1.7;">
+                "Uczę się z Magdą od roku i wreszcie czuję, że mówię po hiszpańsku! Konwersacje na 
+                lekcjach bardzo mi pomogły przełamać barierę językową."
+              </p>
+              <p style="font-weight: 700; color: var(--orange);">— Piotr, 35 lat</p>
+            </div>
+            <div class="card">
+              <p style="font-style: italic; margin-bottom: 1.5rem; color: var(--gray); line-height: 1.7;">
+                "Wspaniała nauczycielka! Zawsze cierpliwa, wyjaśnia wszystko w zrozumiały sposób. 
+                Polecam każdemu, kto chce naprawdę nauczyć się hiszpańskiego!"
+              </p>
+              <p style="font-weight: 700; color: var(--orange);">— Karolina, 42 lata</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="background: linear-gradient(135deg, var(--cream) 0%, #fff5e6 100%);">
+        <div class="container">
+          <h2 style="text-align: center; margin-bottom: 2rem;">Moja przygoda z hiszpańskim 🌍</h2>
+          <div style="max-width: 800px; margin: 0 auto;">
+            <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+              Moja miłość do języka hiszpańskiego zaczęła się podczas studiów. Fascynowała mnie nie tylko 
+              melodyjność tego języka, ale także bogactwo kultur hiszpańskojęzycznych - od flamenco 
+              w Andaluzji, przez tango w Argentynie, po salsa na Kubie.
+            </p>
+            <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+              Przez lata mieszkałam w Hiszpanii, gdzie doskonaliłam język i poznawałam lokalne zwyczaje. 
+              Podróżowałam również po krajach Ameryki Łacińskiej - Meksyku, Kolumbii, Peru - co pozwoliło 
+              mi poznać różnorodność tego pięknego języka.
+            </p>
+            <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
+              Dziś chcę dzielić się tą pasją z Tobą! Na moich lekcjach nie tylko nauczysz się języka, 
+              ale także poznasz kulturę, tradycje i codzienne życie w krajach hiszpańskojęzycznych.
+            </p>
+            <div style="text-align: center;">
+              <a class="btn" href="offer.html"><span>📚 Zobacz moją ofertę</span></a>
+            </div>
           </div>
         </div>
       </section>
@@ -50,9 +139,8 @@
 
     <footer class="site-footer">
       <div class="container">
-        <p>© 2025 Language Learning Blog</p>
+        <p>© 2025 Español con Pasión - Magdalena Kowalska | Wszystkie prawa zastrzeżone</p>
       </div>
     </footer>
   </body>
-  </html>
-
+</html>
