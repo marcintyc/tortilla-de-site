@@ -1,54 +1,79 @@
-# Español con Pasión - Strona Nauczycielki Hiszpańskiego
+# Español Élégant - Fashion-Style Spanish Teacher Website
 
-Profesjonalna strona internetowa dla nauczycielki języka hiszpańskiego z blogiem i ofertą lekcji.
+A luxury, fashion-editorial style website for Spanish language instruction. Minimalist, elegant, and sophisticated.
 
-## 🎨 Design
+## 🎨 Design Philosophy
 
-Nowoczesny design wykorzystujący paletę kolorów:
-- **Szary (#2C2C2C)** - główny kolor tekstu
-- **Kremowy (#FFFCF5)** - tło
-- **Pomarańczowy (#E26E35)** - akcent
-- **Żółty (#F2BA2B)** - akcent
+**Fashion Editorial Aesthetic:**
+- Minimalist luxury design
+- High-fashion typography (Cormorant Garamond + Montserrat)
+- Elegant color palette: Black, White, Cream, Gold, Rose Gold
+- Clean lines and generous white space
+- Sophisticated animations and transitions
 
-## 📄 Strony
+## 🎯 Color Palette
 
-- **Start** - strona główna z hero section i wprowadzeniem
-- **Blog** - system blogowy z możliwością dodawania wpisów (localStorage)
-- **O mnie** - informacje o nauczycielce
-- **Oferta** - pakiety lekcji i cennik
-- **Kontakt** - formularz kontaktowy
+- **Black (#000000)** - Primary text and accents
+- **White (#FFFFFF)** - Clean backgrounds
+- **Cream (#FAF9F6)** - Soft backgrounds
+- **Gold (#D4AF37)** - Luxury accents
+- **Rose Gold (#B76E79)** - Elegant highlights
+- **Charcoal (#36454F)** - Body text
+- **Pearl (#EAE0D5)** - Subtle backgrounds
 
-## 🚀 Funkcjonalności
+## 📄 Pages
 
-- Responsywny design (mobile-first)
-- System blogowy z localStorage
-- Formularze kontaktowe
-- Animacje i hover effects
-- Dostępność (ARIA labels, focus states)
-- SEO friendly
+- **Home** - Editorial-style hero with luxury presentation
+- **Journal** - Blog system with elegant card layout
+- **About** - Sophisticated biography and credentials
+- **Services** - Premium pricing presentation
+- **Contact** - Refined contact form with details
 
-## 🛠️ Technologie
+## ✨ Features
 
-- HTML5
-- CSS3 (Flexbox, Grid, Custom Properties)
+- **Typography:** Cormorant Garamond (headings) + Montserrat (body)
+- **Layout:** Minimalist with generous spacing
+- **Animations:** Subtle, sophisticated transitions
+- **Style:** Fashion editorial / luxury magazine
+- **Navigation:** Clean, minimal, uppercase letters
+- **Buttons:** Borderless with elegant hover effects
+- **Cards:** Clean borders with subtle shadows
+- **Forms:** Minimal with bottom-border inputs
+
+## 🎭 Style Highlights
+
+- Italic serif headings for elegance
+- Uppercase navigation with letter spacing
+- Minimal borders and shadows
+- Gold accents for luxury touch
+- Black & white foundation
+- Generous line height for readability
+- Fashion magazine-inspired layout
+- Editorial photography aesthetic
+
+## 🛠️ Technologies
+
+- HTML5 (Semantic markup)
+- CSS3 (Custom properties, Grid, Flexbox)
 - Vanilla JavaScript
-- Google Fonts (Montserrat)
+- Google Fonts (Cormorant Garamond, Montserrat)
 
-## 📱 Responsywność
+## 📱 Responsive Design
 
-Strona jest w pełni responsywna i działa na:
-- Smartfonach
-- Tabletach
-- Komputerach
+Fully responsive across:
+- Mobile devices
+- Tablets
+- Desktop screens
 
-## 🌟 Wyróżniki
+## 🌟 Unique Elements
 
-- Czysty, nowoczesny design
-- Płynne animacje
-- Intuicyjna nawigacja
-- Profesjonalny wygląd
-- Szybkie ładowanie
+- Fashion editorial typography
+- Luxury minimalism
+- Elegant hover states
+- Sophisticated color transitions
+- Clean, spacious layouts
+- Premium feel throughout
 
 ---
 
-© 2025 Español con Pasión - Magdalena Kowalska
+© 2025 Español Élégant
