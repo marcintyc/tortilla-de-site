@@ -1,79 +1,99 @@
-# Español Élégant - Fashion-Style Spanish Teacher Website
+# Hiszpańska Literka - Strona Nauczycielki Hiszpańskiego
 
-A luxury, fashion-editorial style website for Spanish language instruction. Minimalist, elegant, and sophisticated.
+Profesjonalna, ciepła i przytulna strona internetowa dla nauczycielki języka hiszpańskiego. 
+Inspirowana stylem Francuska Literka.
 
-## 🎨 Design Philosophy
+## 🎨 Styl Design
 
-**Fashion Editorial Aesthetic:**
-- Minimalist luxury design
-- High-fashion typography (Cormorant Garamond + Montserrat)
-- Elegant color palette: Black, White, Cream, Gold, Rose Gold
-- Clean lines and generous white space
-- Sophisticated animations and transitions
+**Ciepły, przyjazny i profesjonalny**
+- Inspiracja: Francuska Literka
+- Kolorystyka: Ciepłe beże, korale, terrakota
+- Charakterystyka: Przytulny, zachęcający, profesjonalny
 
-## 🎯 Color Palette
+## 🎯 Paleta Kolorów
 
-- **Black (#000000)** - Primary text and accents
-- **White (#FFFFFF)** - Clean backgrounds
-- **Cream (#FAF9F6)** - Soft backgrounds
-- **Gold (#D4AF37)** - Luxury accents
-- **Rose Gold (#B76E79)** - Elegant highlights
-- **Charcoal (#36454F)** - Body text
-- **Pearl (#EAE0D5)** - Subtle backgrounds
+**Podstawowe:**
+- Beż jasny (#F5F1E8) - delikatne tła
+- Beż (#E8DCC8) - akcenty
+- Krem (#FFF9F0) - główne tło
+- Brzoskwinia (#F4E0D4) - soft backgrounds
 
-## 📄 Pages
+**Akcenty:**
+- Koral (#E89B8F) - główne CTA
+- Terrakota (#D87A6A) - linki i akcenty
+- Brąz (#8B6F47) - tekst wtórny
+- Ciemny brąz (#5C4A3A) - nagłówki
 
-- **Home** - Editorial-style hero with luxury presentation
-- **Journal** - Blog system with elegant card layout
-- **About** - Sophisticated biography and credentials
-- **Services** - Premium pricing presentation
-- **Contact** - Refined contact form with details
+**Dodatkowe:**
+- Złoty (#C9A961) - luksusowe akcenty
+- Złoty jasny (#E3D0A1) - delikatne podkreślenia
 
-## ✨ Features
+## 📄 Strony
 
-- **Typography:** Cormorant Garamond (headings) + Montserrat (body)
-- **Layout:** Minimalist with generous spacing
-- **Animations:** Subtle, sophisticated transitions
-- **Style:** Fashion editorial / luxury magazine
-- **Navigation:** Clean, minimal, uppercase letters
-- **Buttons:** Borderless with elegant hover effects
-- **Cards:** Clean borders with subtle shadows
-- **Forms:** Minimal with bottom-border inputs
+- **Start** - Ciepłe powitanie z hero section
+- **Blog** - System blogowy z zaokrąglonymi kartami
+- **O mnie** - Biografia i doświadczenie
+- **Oferta** - Pakiety lekcji z cenami
+- **Kontakt** - Formularz kontaktowy
 
-## 🎭 Style Highlights
+## ✨ Cechy Designu
 
-- Italic serif headings for elegance
-- Uppercase navigation with letter spacing
-- Minimal borders and shadows
-- Gold accents for luxury touch
-- Black & white foundation
-- Generous line height for readability
-- Fashion magazine-inspired layout
-- Editorial photography aesthetic
+**Typografia:**
+- Montserrat (wszystkie wagi 400-800)
+- Czytelne, przyjazne nagłówki
+- Dobrze wyważone rozmiary
 
-## 🛠️ Technologies
+**Layout:**
+- Zaokrąglone rogi (8px, 16px, 24px)
+- Soft shadows
+- Generous padding i white space
+- Card-based design
 
-- HTML5 (Semantic markup)
-- CSS3 (Custom properties, Grid, Flexbox)
+**Kolory i Efekty:**
+- Ciepłe gradienty (koral → terrakota)
+- Soft hover transitions
+- Rounded buttons (50px border-radius)
+- Gentle animations
+
+**Elementy:**
+- Zaokrąglone checkmarki w kolorowych kółkach
+- Gradient borders na kartach
+- Soft floating animations
+- Custom scrollbar z gradientem
+
+## 🎭 Charakterystyka
+
+✓ Ciepła, przyjazna atmosfera
+✓ Profesjonalny, ale przystępny
+✓ Zachęcający do kontaktu
+✓ Zaokrąglone kształty
+✓ Soft shadows
+✓ Delikatne animacje
+✓ Przyjemne dla oka kolory
+
+## 🛠️ Technologie
+
+- HTML5
+- CSS3 (Custom Properties, Grid, Flexbox)
 - Vanilla JavaScript
-- Google Fonts (Cormorant Garamond, Montserrat)
+- Google Fonts (Montserrat)
 
-## 📱 Responsive Design
+## 📱 Responsywność
 
-Fully responsive across:
-- Mobile devices
-- Tablets
-- Desktop screens
+Pełna responsywność na:
+- Smartfonach
+- Tabletach
+- Komputerach stacjonarnych
 
-## 🌟 Unique Elements
+## 🌟 Wyróżniki
 
-- Fashion editorial typography
-- Luxury minimalism
-- Elegant hover states
-- Sophisticated color transitions
-- Clean, spacious layouts
-- Premium feel throughout
+- Ciepła kolorystyka beżowo-koralowa
+- Zaokrąglone elementy
+- Soft shadows i transitions
+- Przyjazne checkmarki
+- Gradient CTA buttons
+- Professional yet friendly
 
 ---
 
-© 2025 Español Élégant
+© 2025 Hiszpańska Literka
